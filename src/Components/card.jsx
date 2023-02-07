@@ -5,7 +5,8 @@ function Card(props){
  const {title,location,googleMapsUrl,startDate,endDate,description,imageUrl}=props.item;
 
   return(
-    <div className="card-container">
+    <div>
+ <div className="card-container">
       <img src={imageUrl} className="card-image"/>
 
       <div>
@@ -18,8 +19,10 @@ function Card(props){
         <p className="location-date">{startDate} - {endDate}</p>
         <p className="location-description">{description}</p>
       </div>
-     
+      </div>
+      <hr className="horizontal-line"></hr>
     </div>
+   
   )
 }
 
