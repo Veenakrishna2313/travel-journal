@@ -1,0 +1,44 @@
+*,*::before,*::after{
+  box-sizing: border-box;
+  
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: rgb(210, 207, 207);
+}
+
+.main-container{
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+}
+/********** Nav Bar****************/
+
+.Navbar{
+  background-color: #F55A5A;
+  height:60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.Nav-logo{
+  width:24px;
+  height: 24px;
+  align-self: center;
+  margin-right: 3px;
+}
+
+.Nav-text{
+  color:#FFFFFF;
+  font-size: 14px;
+  align-self: center;
+}
+
