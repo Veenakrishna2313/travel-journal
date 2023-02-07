@@ -1,17 +1,22 @@
-function Card(){
+import logo from "../assets/location.png";
+
+function Card(props){
+
+ const {title,location,googleMapsUrl,startDate,endDate,description,imageUrl}=props.item;
+
   return(
     <div className="card-container">
-      <img className="card-image"/>
+      <img src={imageUrl} className="card-image"/>
 
       <div>
         <div className="card-location">
-          <img className="location-logo"/>
-          <p className="card--country"></p>
-          <a><p className="card--map">View on Google Maps</p></a>
+          <img src={logo} className="location-logo"/>
+          <p className="card--country">{location}</p>
+          <a href={googleMapsUrl}><p className="card--map">View on Google Maps</p></a>
         </div>
-        <h1 className="location-name"></h1>
-        <p className="location-date"></p>
-        <p className="location-description"></p>
+        <h1 className="location-name">{title}</h1>
+        <p className="location-date">{startDate} - {endDate}</p>
+        <p className="location-description">{description}</p>
       </div>
      
     </div>

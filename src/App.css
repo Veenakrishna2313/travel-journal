@@ -10,14 +10,20 @@ html{
 body{
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background-color: rgb(210, 207, 207);
+  background-color: #E5E5E5;
 }
 
 .main-container{
-  max-width: 900px;
+  max-width: 700px; 
+  height: 150vh;
   margin: 0 auto;
   background-color: #FFFFFF;
   border-radius: 5px;
+}
+
+.container{
+  max-width: 600px;
+  margin:0 auto;
 }
 /********** Nav Bar****************/
 
@@ -42,3 +48,74 @@ body{
   align-self: center;
 }
 
+/******************Card Component********************/
+
+.card-container{
+  display: flex;
+  gap:20px;
+  color:#2B283A;
+  align-items: center;
+  margin: 40px;
+}
+
+.card-location{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+
+.card-image{
+  min-width: 150px;
+  max-height: 190px;
+  border-radius: 5px;
+  
+
+}
+
+.location-logo{
+  width:10px;
+  height:9px;
+  
+}
+
+.card--country{
+  text-transform: uppercase;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.17em;
+  font-weight: 400;
+  margin-left:5px;
+  margin-right: 12px;
+  
+  
+}
+
+.card--map{
+    font-weight: 400;
+    font-size: 10.24px;
+    line-height: 12px;
+    text-decoration-line: underline;
+    color: #918E9B;
+}
+
+.location-name{
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;  
+    
+}
+
+.location-date{
+    font-weight: 700;
+    font-size: 10.24px;
+    line-height: 12px;  
+   
+}
+
+.location-description{
+    font-weight: 400;
+    font-size: 10.24px;
+    line-height: 150%;
+}
